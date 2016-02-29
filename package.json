@@ -1,0 +1,27 @@
+{
+  "name": "gramene-bedify",
+  "version": "1.0.0",
+  "description": "transforms gramene JSON genes into tab delimited bed",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/jasmine-node/lib/jasmine-node/cli.js spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warelab/gramene-bedify.git"
+  },
+  "author": "ajo2995",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/warelab/gramene-bedify/issues"
+  },
+  "homepage": "https://github.com/warelab/gramene-bedify#readme",
+  "devDependencies": {
+    "JSONStream": "^1.0.7",
+    "jasmine-node": "^1.14.5"
+  },
+  "dependencies": {
+    "gramene-gene-positions": "^1.0.1",
+    "through2": "^2.0.1"
+  }
+}
