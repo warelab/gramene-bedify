@@ -154,6 +154,84 @@ function bedCDS(gene, transcript_id) {
   return beds;
 }
 
+function bedUTR5(gene, transcript_id) {
+  var beds=[];
+  var tr = gene.gene_structure.transcripts[transcript_id];
+  if (tr.cds && tr.cds.start > 1) {
+    var cds_gene_start = ggp.remap(gene, tr.cds.start, 'transcript', 'gene');
+    var exons = gene.gene_structure.exons;
+    tr.exons.forEach(function (exon_id) {
+      var exon = exons[exon_id];
+      if (exon.start < cds_gene_start) {
+        if (gene.location.strand === 1) {
+          beds.push([
+            gene.location.region,
+            ggp.remap(gene, exon.start, 'gene', 'genome'),
+            (exon.end < cds_gene_start) ?
+              ggp.remap(gene, exon.end, 'gene', 'genome')
+            : ggp.remap(gene, cds_gene_start-1, 'gene', 'genome'),
+            exon_id.replace(/__/g, '.'),
+            0,
+            '+'
+          ]);
+        }
+        else {
+          beds.push([
+            gene.location.region,
+            (exon.end < cds_gene_start) ?
+              ggp.remap(gene, exon.end, 'gene', 'genome')
+            : ggp.remap(gene, cds_gene_start-1, 'gene', 'genome'),
+            ggp.remap(gene, exon.start, 'gene', 'genome'),
+            exon_id.replace(/__/g, '.'),
+            0,
+            '-'
+          ]);
+        }
+      }
+    });
+  }
+  return beds;
+}
+
+function bedUTR3(gene, transcript_id) {
+  var beds=[];
+  var tr = gene.gene_structure.transcripts[transcript_id];
+  if (tr.cds && tr.cds.end < tr.length) {
+    var cds_gene_end = ggp.remap(gene, tr.cds.end, 'transcript', 'gene');
+    var exons = gene.gene_structure.exons;
+    tr.exons.forEach(function (exon_id) {
+      var exon = exons[exon_id];
+      if (exon.end > cds_gene_end) {
+        if (gene.location.strand === 1) {
+          beds.push([
+            gene.location.region,
+            (exon.start > cds_gene_end) ?
+              ggp.remap(gene, exon.start, 'gene', 'genome')
+            : ggp.remap(gene, cds_gene_end+1, 'gene', 'genome'),
+            ggp.remap(gene, exon.end, 'gene', 'genome'),
+            exon_id.replace(/__/g, '.'),
+            0,
+            '+'
+          ]);
+        }
+        else {
+          beds.push([
+            gene.location.region,
+            ggp.remap(gene, exon.end, 'gene', 'genome'),
+            (exon.start > cds_gene_end) ?
+              ggp.remap(gene, exon.start, 'gene', 'genome')
+            : ggp.remap(gene, cds_gene_end+1, 'gene', 'genome'),
+            exon_id.replace(/__/g, '.'),
+            0,
+            '-'
+          ]);
+        }
+      }
+    });
+  }
+  return beds;
+}
+
 var featureExtractor = {
   gene: function(gene) {
     return [bedGene(gene)];
@@ -241,6 +319,42 @@ var featureExtractor = {
     }
     else {
       // intersection/union of CDS not supported
+    }
+    return beds;
+  },
+  utr5: function(gene, mode) {
+    var beds = [];
+    if (mode === 'canonical') {
+      var ct_id = gene.gene_structure.canonical_transcript;
+      beds = bedUTR5(gene,ct_id);
+    }
+    else if (mode === 'all') {
+      for(var t_id in gene.gene_structure.transcripts) {
+        bedUTR5(gene, t_id).forEach(function(intron) {
+          beds.push(intron);
+        });
+      }
+    }
+    else {
+      // intersection/union of utr5 not supported
+    }
+    return beds;
+  },
+  utr3: function(gene, mode) {
+    var beds = [];
+    if (mode === 'canonical') {
+      var ct_id = gene.gene_structure.canonical_transcript;
+      beds = bedUTR3(gene,ct_id);
+    }
+    else if (mode === 'all') {
+      for(var t_id in gene.gene_structure.transcripts) {
+        bedUTR3(gene, t_id).forEach(function(intron) {
+          beds.push(intron);
+        });
+      }
+    }
+    else {
+      // intersection/union of utr3 not supported
     }
     return beds;
   }
