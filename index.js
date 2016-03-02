@@ -379,5 +379,8 @@ module.exports = function(gene,params) {
   var features = extract(gene, bedCombiner).map(function (feature) {
     return feature.join("\t");
   });
-  return (features.join("\n"));
+  if (features.length > 0) {
+    return features.join("\n") + "\n";
+  }
+  return '';
 }
