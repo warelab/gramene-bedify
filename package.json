@@ -21,7 +21,7 @@
     "jasmine-node": "^1.14.5"
   },
   "dependencies": {
-    "gramene-gene-positions": "^2.0.0",
+    "gramene-gene-positions": "^2.0.1",
     "lodash": "^4.6.1",
     "through2": "^2.0.1"
   }
