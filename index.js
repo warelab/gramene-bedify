@@ -254,7 +254,8 @@ var featureExtractor = {
       beds.push(bedTranscript(gene,ct_id));
     }
     else if (mode === 'all') {
-      for(var t_id in gene.gene_structure.transcripts) {
+      makeKeys(gene);
+      for(var t_id in gene._transcripts) {
         beds.push(bedTranscript(gene, t_id));
       }
     }
@@ -274,24 +275,23 @@ var featureExtractor = {
           gene.location.region,
           ggp.remap(gene, exon.start, 'gene', 'genome'),
           ggp.remap(gene, exon.end, 'gene', 'genome'),
-          exon_id.replace(/__/g,'.'),
+          exon_id,
           0,
           gene.location.strand === 1 ? '+' : '-'
         ]);
       });
     }
     else if (mode === 'all') {
-      for(var exon_id in gene.gene_structure.exons) {
-        var exon = gene._exons[exon_id];
+      gene.gene_structure.exons.forEach(function(exon) {
         beds.push([
           gene.location.region,
           ggp.remap(gene, exon.start, 'gene', 'genome'),
           ggp.remap(gene, exon.end, 'gene', 'genome'),
-          exon_id.replace(/__/g,'.'),
+          exon.id,
           0,
           gene.location.strand === 1 ? '+' : '-'
         ]);
-      }
+      });
     }
     else {
       // intersection/union of exons not supported
@@ -345,8 +345,8 @@ var featureExtractor = {
     else if (mode === 'all') {
       makeKeys(gene);
       for(var t_id in gene._transcripts) {
-        bedUTR5(gene, t_id).forEach(function(intron) {
-          beds.push(intron);
+        bedUTR5(gene, t_id).forEach(function(utr) {
+          beds.push(utr);
         });
       }
     }
@@ -364,8 +364,8 @@ var featureExtractor = {
     else if (mode === 'all') {
       makeKeys(gene);
       for(var t_id in gene._transcripts) {
-        bedUTR3(gene, t_id).forEach(function(intron) {
-          beds.push(intron);
+        bedUTR3(gene, t_id).forEach(function(utr) {
+          beds.push(utr);
         });
       }
     }
