@@ -1,6 +1,6 @@
 {
   "name": "gramene-bedify",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "transforms gramene JSON genes into tab delimited bed",
   "main": "index.js",
   "scripts": {
