@@ -2,6 +2,16 @@
 
 var through2 = require('through2');
 var ggp = require('gramene-gene-positions');
+var _ = require('lodash');
+
+function makeKeys(gene) {
+  if (!gene._transcripts) {
+    gene._transcripts = _.keyBy(gene.gene_structure.transcripts,'id');
+  }
+  if (!gene._exons) {
+    gene._exons = _.keyBy(gene.gene_structure.exons,'id');
+  }
+}
 
 function bedGene(gene) {
   return [
@@ -15,7 +25,8 @@ function bedGene(gene) {
 }
 
 function bedTranscript(gene,transcript_id) {
-  var tr = gene.gene_structure.transcripts[transcript_id];
+  makeKeys(gene);
+  var tr = gene._transcripts[transcript_id];
   var bed = [
     gene.location.region,
     gene.location.start, // might change if alt TSS
@@ -46,7 +57,7 @@ function bedTranscript(gene,transcript_id) {
     // iterate over exons in order
     var tlen=0;
     tr.exons.forEach(function (ex_id) {
-      var exon = gene.gene_structure.exons[ex_id];
+      var exon = gene._exons[ex_id];
       blockStarts.push(tlen);
       blockSizes.push(exon.end-exon.start+1);
       tlen += exon.end - exon.start + 1;
@@ -66,7 +77,7 @@ function bedTranscript(gene,transcript_id) {
     // iterate over exons in reverse order
     var tlen=0;
     tr.exons.slice().reverse().forEach(function(ex_id) {
-      var exon = gene.gene_structure.exons[ex_id];
+      var exon = gene._exons[ex_id];
       blockStarts.push(tlen);
       blockSizes.push(exon.end-exon.start+1);
       tlen += exon.end - exon.start + 1;
@@ -78,16 +89,16 @@ function bedTranscript(gene,transcript_id) {
 }
 
 function bedIntrons(gene, transcript_id) {
+  makeKeys(gene);
   var beds=[];
-  var tr = gene.gene_structure.transcripts[transcript_id];
-  var exons = gene.gene_structure.exons;
+  var tr = gene._transcripts[transcript_id];
   if (gene.location.strand === 1) {
     for(var i=1; i<tr.exons.length; i++) {
       var intron_id = tr.exons[i-1] + '-intron-' + tr.exons[i];
       beds.push([
         gene.location.region,
-        ggp.remap(gene, exons[tr.exons[i-1]].end, 'gene', 'genome'),
-        ggp.remap(gene, exons[tr.exons[i]].start, 'gene', 'genome'),
+        ggp.remap(gene, gene._exons[tr.exons[i-1]].end, 'gene', 'genome'),
+        ggp.remap(gene, gene._exons[tr.exons[i]].start, 'gene', 'genome'),
         intron_id.replace(/__/g,'.'),
         0,
         gene.location.strand
@@ -99,8 +110,8 @@ function bedIntrons(gene, transcript_id) {
       var intron_id = tr.exons[i-1] + '-intron-' + tr.exons[i];
       beds.push([
         gene.location.region,
-        ggp.remap(gene, exons[tr.exons[i]].start, 'gene', 'genome'),
-        ggp.remap(gene, exons[tr.exons[i-1]].end, 'gene', 'genome'),
+        ggp.remap(gene, gene._exons[tr.exons[i]].start, 'gene', 'genome'),
+        ggp.remap(gene, gene._exons[tr.exons[i-1]].end, 'gene', 'genome'),
         intron_id.replace(/__/g,'.'),
         0,
         gene.location.strand
@@ -111,14 +122,14 @@ function bedIntrons(gene, transcript_id) {
 }
 
 function bedCDS(gene, transcript_id) {
+  makeKeys(gene);
   var beds=[];
-  var tr = gene.gene_structure.transcripts[transcript_id];
+  var tr = gene._transcripts[transcript_id];
   if (tr.cds) {
     var cds_start = ggp.remap(gene,tr.cds.start, 'transcript','gene');
     var cds_end = ggp.remap(gene,tr.cds.end, 'transcript','gene');
-    var exons = gene.gene_structure.exons;
     tr.exons.forEach(function (exon_id) {
-      var exon = exons[exon_id];
+      var exon = gene._exons[exon_id];
       if (exon.end >= cds_start && exon.start <= cds_end) {
         if (gene.location.strand === 1) {
           beds.push([
@@ -155,13 +166,13 @@ function bedCDS(gene, transcript_id) {
 }
 
 function bedUTR5(gene, transcript_id) {
+  makeKeys(gene);
   var beds=[];
-  var tr = gene.gene_structure.transcripts[transcript_id];
+  var tr = gene._transcripts[transcript_id];
   if (tr.cds && tr.cds.start > 1) {
     var cds_gene_start = ggp.remap(gene, tr.cds.start, 'transcript', 'gene');
-    var exons = gene.gene_structure.exons;
     tr.exons.forEach(function (exon_id) {
-      var exon = exons[exon_id];
+      var exon = gene._exons[exon_id];
       if (exon.start < cds_gene_start) {
         if (gene.location.strand === 1) {
           beds.push([
@@ -194,13 +205,13 @@ function bedUTR5(gene, transcript_id) {
 }
 
 function bedUTR3(gene, transcript_id) {
+  makeKeys(gene);
   var beds=[];
-  var tr = gene.gene_structure.transcripts[transcript_id];
+  var tr = gene._transcripts[transcript_id];
   if (tr.cds && tr.cds.end < tr.length) {
     var cds_gene_end = ggp.remap(gene, tr.cds.end, 'transcript', 'gene');
-    var exons = gene.gene_structure.exons;
     tr.exons.forEach(function (exon_id) {
-      var exon = exons[exon_id];
+      var exon = gene._exons[exon_id];
       if (exon.end > cds_gene_end) {
         if (gene.location.strand === 1) {
           beds.push([
@@ -253,11 +264,12 @@ var featureExtractor = {
     return beds;
   },
   exon: function(gene, mode) {
+    makeKeys(gene);
     var beds = [];
     if (mode === 'canonical') {
       var ct_id = gene.gene_structure.canonical_transcript;
-      gene.gene_structure.transcripts[ct_id].exons.forEach(function(exon_id) {
-        var exon = gene.gene_structure.exons[exon_id];
+      gene._transcripts[ct_id].exons.forEach(function(exon_id) {
+        var exon = gene._exons[exon_id];
         beds.push([
           gene.location.region,
           ggp.remap(gene, exon.start, 'gene', 'genome'),
@@ -270,7 +282,7 @@ var featureExtractor = {
     }
     else if (mode === 'all') {
       for(var exon_id in gene.gene_structure.exons) {
-        var exon = gene.gene_structure.exons[exon_id];
+        var exon = gene._exons[exon_id];
         beds.push([
           gene.location.region,
           ggp.remap(gene, exon.start, 'gene', 'genome'),
@@ -293,7 +305,8 @@ var featureExtractor = {
       beds = bedIntrons(gene,ct_id);
     }
     else if (mode === 'all') {
-      for(var t_id in gene.gene_structure.transcripts) {
+      makeKeys(gene);
+      for(var t_id in gene._transcripts) {
         bedIntrons(gene, t_id).forEach(function(intron) {
           beds.push(intron);
         });
@@ -311,7 +324,8 @@ var featureExtractor = {
       beds = bedCDS(gene,ct_id);
     }
     else if (mode === 'all') {
-      for(var t_id in gene.gene_structure.transcripts) {
+      makeKeys(gene);
+      for(var t_id in gene._transcripts) {
         bedCDS(gene, t_id).forEach(function(intron) {
           beds.push(intron);
         });
@@ -329,7 +343,8 @@ var featureExtractor = {
       beds = bedUTR5(gene,ct_id);
     }
     else if (mode === 'all') {
-      for(var t_id in gene.gene_structure.transcripts) {
+      makeKeys(gene);
+      for(var t_id in gene._transcripts) {
         bedUTR5(gene, t_id).forEach(function(intron) {
           beds.push(intron);
         });
@@ -347,7 +362,8 @@ var featureExtractor = {
       beds = bedUTR3(gene,ct_id);
     }
     else if (mode === 'all') {
-      for(var t_id in gene.gene_structure.transcripts) {
+      makeKeys(gene);
+      for(var t_id in gene._transcripts) {
         bedUTR3(gene, t_id).forEach(function(intron) {
           beds.push(intron);
         });
