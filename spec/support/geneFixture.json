@@ -2,11 +2,12 @@
   {
     "_id": "AT1G67500",
     "name": "REV3",
-    "description": "DNA polymerase zeta catalytic subunit [Source:UniProtKB/Swiss-Prot;Acc:Q766Z3]",
+    "description": "recovery protein 3",
     "biotype": "protein_coding",
     "taxon_id": 3702,
     "system_name": "arabidopsis_thaliana",
     "db_type": "core",
+    "gene_idx": 6938,
     "location": {
       "region": "1",
       "start": 25287707,
@@ -14,64 +15,118 @@
       "strand": -1,
       "map": "GCA_000001735.1"
     },
-    "xrefs": {
-      "Uniprot_gn": [
-        "REV3"
-      ],
-      "TAIR_SYMBOL": [
-        "ATREV3",
-        "REV3"
-      ],
-      "UniParc": [
-        "UPI0001E92BEE"
-      ],
-      "protein_id": [
-        "AEE34656"
-      ],
-      "TAIR_TRANSLATION": [
-        "AT1G67500"
-      ],
-      "EMBL": [
-        "CP002684"
-      ],
-      "RefSeq_peptide": [
-        "NP_001185344"
-      ],
-      "KEGG_Enzyme": [
-        "00240+2.7.7.7",
-        "00230+2.7.7.7"
-      ],
-      "Uniprot/SPTREMBL": [
-        "F4HTM5"
-      ],
-      "TAIR_LOCUS_MODEL": [
-        "AT1G67500.2"
-      ],
-      "RefSeq_mRNA": [
-        "NM_001198415"
-      ],
-      "WikiGene": [
-        "843071"
-      ],
-      "NASC_GENE_ID": [
-        "AT1G67500"
-      ],
-      "EntrezGene": [
-        "843071"
-      ],
-      "TAIR_LOCUS": [
-        "AT1G67500"
-      ],
-      "UniGene": [
-        "At.35644"
-      ],
-      "ArrayExpress": [
-        "AT1G67500"
-      ],
-      "ARAPORT_GENE": [
-        "AT1G67500"
-      ]
-    },
+    "xrefs": [
+      {
+        "db": "Uniprot_gn",
+        "ids": [
+          "REV3"
+        ]
+      },
+      {
+        "db": "TAIR_SYMBOL",
+        "ids": [
+          "ATREV3",
+          "REV3"
+        ]
+      },
+      {
+        "db": "UniParc",
+        "ids": [
+          "UPI0001E92BEE"
+        ]
+      },
+      {
+        "db": "protein_id",
+        "ids": [
+          "AEE34656"
+        ]
+      },
+      {
+        "db": "TAIR_TRANSLATION",
+        "ids": [
+          "AT1G67500"
+        ]
+      },
+      {
+        "db": "EMBL",
+        "ids": [
+          "CP002684"
+        ]
+      },
+      {
+        "db": "RefSeq_peptide",
+        "ids": [
+          "NP_001185344"
+        ]
+      },
+      {
+        "db": "Uniprot/SPTREMBL",
+        "ids": [
+          "F4HTM5"
+        ]
+      },
+      {
+        "db": "KEGG_Enzyme",
+        "ids": [
+          "00230+2.7.7.7",
+          "00240+2.7.7.7"
+        ]
+      },
+      {
+        "db": "TAIR_LOCUS_MODEL",
+        "ids": [
+          "AT1G67500.2"
+        ]
+      },
+      {
+        "db": "RefSeq_mRNA",
+        "ids": [
+          "NM_001198415"
+        ]
+      },
+      {
+        "db": "WikiGene",
+        "ids": [
+          "843071"
+        ]
+      },
+      {
+        "db": "NASC_GENE_ID",
+        "ids": [
+          "AT1G67500"
+        ]
+      },
+      {
+        "db": "EntrezGene",
+        "ids": [
+          "843071"
+        ]
+      },
+      {
+        "db": "TAIR_LOCUS",
+        "ids": [
+          "AT1G67500"
+        ]
+      },
+      {
+        "db": "UniGene",
+        "ids": [
+          "At.35644"
+        ]
+      },
+      {
+        "db": "ArrayExpress",
+        "ids": [
+          "AT1G67500"
+        ]
+      },
+      {
+        "db": "ARAPORT_GENE",
+        "ids": [
+          "AT1G67500"
+        ]
+      }
+    ],
     "synonyms": [
       "ATREV3",
       "recovery protein 3",
@@ -80,444 +135,153 @@
       "REV3"
     ],
     "gene_structure": {
-      "exons": {
-        "AT1G67500__1__exon1": {
+      "exons": [
+        {
+          "id": "AT1G67500.1.exon1",
           "start": 1,
           "end": 68
         },
-        "AT1G67500__1__exon2": {
+        {
+          "id": "AT1G67500.1.exon2",
           "start": 160,
           "end": 335
         },
-        "AT1G67500__1__exon3": {
+        {
+          "id": "AT1G67500.1.exon3",
           "start": 496,
           "end": 578
         },
-        "AT1G67500__1__exon4": {
+        {
+          "id": "AT1G67500.1.exon4",
           "start": 666,
           "end": 723
         },
-        "AT1G67500__1__exon5": {
+        {
+          "id": "AT1G67500.1.exon5",
           "start": 819,
           "end": 868
         },
-        "AT1G67500__1__exon6": {
+        {
+          "id": "AT1G67500.1.exon6",
           "start": 1038,
           "end": 1150
         },
-        "AT1G67500__1__exon7": {
+        {
+          "id": "AT1G67500.1.exon7",
           "start": 1226,
           "end": 1271
         },
-        "AT1G67500__1__exon8": {
+        {
+          "id": "AT1G67500.1.exon8",
           "start": 1381,
           "end": 1449
         },
-        "AT1G67500__1__exon9": {
+        {
+          "id": "AT1G67500.1.exon9",
           "start": 1866,
           "end": 2009
         },
-        "AT1G67500__1__exon10": {
+        {
+          "id": "AT1G67500.1.exon10",
           "start": 2097,
           "end": 2280
         },
-        "AT1G67500__1__exon11": {
+        {
+          "id": "AT1G67500.1.exon11",
           "start": 2359,
           "end": 2450
         },
-        "AT1G67500__1__exon12": {
+        {
+          "id": "AT1G67500.1.exon12",
           "start": 2529,
           "end": 4149
         },
-        "AT1G67500__1__exon13": {
+        {
+          "id": "AT1G67500.1.exon13",
           "start": 4351,
           "end": 4542
         },
-        "AT1G67500__1__exon14": {
+        {
+          "id": "AT1G67500.1.exon14",
           "start": 4741,
           "end": 5093
         },
-        "AT1G67500__1__exon15": {
+        {
+          "id": "AT1G67500.1.exon15",
           "start": 5399,
           "end": 5541
         },
-        "AT1G67500__1__exon16": {
+        {
+          "id": "AT1G67500.1.exon16",
           "start": 5626,
           "end": 6208
         },
-        "AT1G67500__1__exon17": {
+        {
+          "id": "AT1G67500.1.exon17",
           "start": 6285,
           "end": 6431
         },
-        "AT1G67500__1__exon18": {
+        {
+          "id": "AT1G67500.1.exon18",
           "start": 6613,
           "end": 6885
         },
-        "AT1G67500__1__exon19": {
+        {
+          "id": "AT1G67500.1.exon19",
           "start": 7051,
           "end": 7158
         },
-        "AT1G67500__1__exon20": {
+        {
+          "id": "AT1G67500.1.exon20",
           "start": 7242,
           "end": 7447
         },
-        "AT1G67500__1__exon21": {
+        {
+          "id": "AT1G67500.1.exon21",
           "start": 7657,
           "end": 7960
         },
-        "AT1G67500__1__exon22": {
+        {
+          "id": "AT1G67500.1.exon22",
           "start": 8046,
           "end": 8663
         },
-        "AT1G67500__1__exon23": {
+        {
+          "id": "AT1G67500.1.exon23",
           "start": 9058,
           "end": 9231
         },
-        "AT1G67500__2__exon10": {
+        {
+          "id": "AT1G67500.2.exon10",
           "start": 2097,
           "end": 2450
         }
-      },
-      "transcripts": {
-        "AT1G67500__1": {
+      ],
+      "transcripts": [
+        {
           "exons": [
-            "AT1G67500__1__exon1",
-            "AT1G67500__1__exon2",
-            "AT1G67500__1__exon3",
-            "AT1G67500__1__exon4",
-            "AT1G67500__1__exon5",
-            "AT1G67500__1__exon6",
-            "AT1G67500__1__exon7",
-            "AT1G67500__1__exon8",
-            "AT1G67500__1__exon9",
-            "AT1G67500__1__exon10",
-            "AT1G67500__1__exon11",
-            "AT1G67500__1__exon12",
-            "AT1G67500__1__exon13",
-            "AT1G67500__1__exon14",
-            "AT1G67500__1__exon15",
-            "AT1G67500__1__exon16",
-            "AT1G67500__1__exon17",
-            "AT1G67500__1__exon18",
-            "AT1G67500__1__exon19",
-            "AT1G67500__1__exon20",
-            "AT1G67500__1__exon21",
-            "AT1G67500__1__exon22",
-            "AT1G67500__1__exon23"
-          ],
-          "length": 5805,
-          "exon_junctions": [
-            68,
-            244,
-            327,
-            385,
-            435,
-            548,
-            594,
-            663,
-            807,
-            991,
-            1083,
-            2704,
-            2896,
-            3249,
-            3392,
-            3975,
-            4122,
-            4395,
-            4503,
-            4709,
-            5013,
-            5631
-          ],
-          "cds": {
-            "start": 133,
-            "end": 5805
-          },
-          "translation": {
-            "id": "AT1G67500.1",
-            "length": 1891,
-            "features": {
-              "domain": {
-                "entries": [
-                  {
-                    "name": "PF03104",
-                    "description": "DNA-directed DNA polymerase, family B, exonuclease domain",
-                    "db": "Pfam",
-                    "interpro": "IPR006133",
-                    "start": 1031,
-                    "end": 1228,
-                    "ipr": 6133
-                  },
-                  {
-                    "name": "PF03104",
-                    "description": "DNA-directed DNA polymerase, family B, exonuclease domain",
-                    "db": "Pfam",
-                    "interpro": "IPR006133",
-                    "start": 55,
-                    "end": 212,
-                    "ipr": 6133
-                  },
-                  {
-                    "name": "PF00136",
-                    "description": "DNA-directed DNA polymerase, family B, multifunctional domain",
-                    "db": "Pfam",
-                    "interpro": "IPR006134",
-                    "start": 1303,
-                    "end": 1746,
-                    "ipr": 6134
-                  },
-                  {
-                    "name": "3.30.420.10",
-                    "description": "Ribonuclease H-like domain",
-                    "db": "Gene3D",
-                    "interpro": "IPR012337",
-                    "start": 1188,
-                    "end": 1302,
-                    "ipr": 12337
-                  },
-                  {
-                    "name": "3.30.420.10",
-                    "description": "Ribonuclease H-like domain",
-                    "db": "Gene3D",
-                    "interpro": "IPR012337",
-                    "start": 1032,
-                    "end": 1154,
-                    "ipr": 12337
-                  },
-                  {
-                    "name": "SSF53098",
-                    "description": "Ribonuclease H-like domain",
-                    "db": "Superfamily",
-                    "interpro": "IPR012337",
-                    "start": 1031,
-                    "end": 1159,
-                    "ipr": 12337
-                  },
-                  {
-                    "name": "SSF53098",
-                    "description": "Ribonuclease H-like domain",
-                    "db": "Superfamily",
-                    "interpro": "IPR012337",
-                    "start": 35,
-                    "end": 187,
-                    "ipr": 12337
-                  },
-                  {
-                    "name": "SSF53098",
-                    "description": "Ribonuclease H-like domain",
-                    "db": "Superfamily",
-                    "interpro": "IPR012337",
-                    "start": 1193,
-                    "end": 1302,
-                    "ipr": 12337
-                  },
-                  {
-                    "name": "2py5A02",
-                    "description": "DNA polymerase, palm domain",
-                    "db": "Gene3D",
-                    "interpro": "IPR023211",
-                    "start": 1487,
-                    "end": 1609,
-                    "ipr": 23211
-                  },
-                  {
-                    "name": "2py5A02",
-                    "description": "DNA polymerase, palm domain",
-                    "db": "Gene3D",
-                    "interpro": "IPR023211",
-                    "start": 1343,
-                    "end": 1371,
-                    "ipr": 23211
-                  },
-                  {
-                    "name": "PF14260",
-                    "description": "C4-type zinc-finger of DNA polymerase delta",
-                    "db": "Pfam",
-                    "interpro": "IPR025687",
-                    "start": 1789,
-                    "end": 1862,
-                    "ipr": 25687
-                  }
-                ],
-                "architecture": [
-                  {
-                    "root": "12337",
-                    "start": 35,
-                    "end": 212,
-                    "interpro": "IPR012337",
-                    "name": "RNaseH-like_dom",
-                    "description": "Ribonuclease H-like domain"
-                  },
-                  {
-                    "root": "12337",
-                    "start": 1031,
-                    "end": 1302,
-                    "interpro": "IPR012337",
-                    "name": "RNaseH-like_dom",
-                    "description": "Ribonuclease H-like domain"
-                  },
-                  {
-                    "root": "6134",
-                    "start": 1303,
-                    "end": 1746,
-                    "interpro": "IPR006134",
-                    "name": "DNA-dir_DNA_pol_B_multi_dom",
-                    "description": "DNA-directed DNA polymerase, family B, multifunctional domain"
-                  },
-                  {
-                    "root": "23211",
-                    "start": 1343,
-                    "end": 1371,
-                    "interpro": "IPR023211",
-                    "name": "DNA_pol_palm_dom",
-                    "description": "DNA polymerase, palm domain"
-                  },
-                  {
-                    "root": "25687",
-                    "start": 1789,
-                    "end": 1862,
-                    "interpro": "IPR025687",
-                    "name": "Znf-C4pol",
-                    "description": "C4-type zinc-finger of DNA polymerase delta"
-                  }
-                ],
-                "roots": "12337 12337 6134 23211 25687"
-              },
-              "family": {
-                "entries": [
-                  {
-                    "name": "PR00106",
-                    "description": "DNA-directed DNA polymerase, family B",
-                    "db": "PRINTS",
-                    "interpro": "IPR006172",
-                    "start": 1463,
-                    "end": 1475,
-                    "ipr": 6172
-                  },
-                  {
-                    "name": "PR00106",
-                    "description": "DNA-directed DNA polymerase, family B",
-                    "db": "PRINTS",
-                    "interpro": "IPR006172",
-                    "start": 1519,
-                    "end": 1527,
-                    "ipr": 6172
-                  },
-                  {
-                    "name": "PR00106",
-                    "description": "DNA-directed DNA polymerase, family B",
-                    "db": "PRINTS",
-                    "interpro": "IPR006172",
-                    "start": 1355,
-                    "end": 1368,
-                    "ipr": 6172
-                  },
-                  {
-                    "name": "SM00486",
-                    "description": "DNA-directed DNA polymerase, family B",
-                    "db": "Smart",
-                    "interpro": "IPR006172",
-                    "start": 1031,
-                    "end": 1533,
-                    "ipr": 6172
-                  },
-                  {
-                    "name": "PTHR10322:SF5",
-                    "description": "DNA polymerase zeta catalytic subunit",
-                    "db": "PANTHER",
-                    "interpro": "IPR030559",
-                    "start": 1190,
-                    "end": 1890,
-                    "ipr": 30559
-                  },
-                  {
-                    "name": "PTHR10322:SF5",
-                    "description": "DNA polymerase zeta catalytic subunit",
-                    "db": "PANTHER",
-                    "interpro": "IPR030559",
-                    "start": 276,
-                    "end": 426,
-                    "ipr": 30559
-                  },
-                  {
-                    "name": "PTHR10322:SF5",
-                    "description": "DNA polymerase zeta catalytic subunit",
-                    "db": "PANTHER",
-                    "interpro": "IPR030559",
-                    "start": 1031,
-                    "end": 1167,
-                    "ipr": 30559
-                  },
-                  {
-                    "name": "PTHR10322:SF5",
-                    "description": "DNA polymerase zeta catalytic subunit",
-                    "db": "PANTHER",
-                    "interpro": "IPR030559",
-                    "start": 470,
-                    "end": 512,
-                    "ipr": 30559
-                  },
-                  {
-                    "name": "PTHR10322:SF5",
-                    "description": "DNA polymerase zeta catalytic subunit",
-                    "db": "PANTHER",
-                    "interpro": "IPR030559",
-                    "start": 640,
-                    "end": 779,
-                    "ipr": 30559
-                  },
-                  {
-                    "name": "PTHR10322:SF5",
-                    "description": "DNA polymerase zeta catalytic subunit",
-                    "db": "PANTHER",
-                    "interpro": "IPR030559",
-                    "start": 1,
-                    "end": 202,
-                    "ipr": 30559
-                  }
-                ]
-              },
-              "conserved_site": {
-                "entries": [
-                  {
-                    "name": "PS00116",
-                    "description": "DNA-directed DNA polymerase, family B, conserved site",
-                    "db": "Prosite_patterns",
-                    "interpro": "IPR017964",
-                    "start": 1521,
-                    "end": 1529,
-                    "ipr": 17964
-                  }
-                ]
-              }
-            }
-          }
-        },
-        "AT1G67500__2": {
-          "exons": [
-            "AT1G67500__1__exon1",
-            "AT1G67500__1__exon2",
-            "AT1G67500__1__exon3",
-            "AT1G67500__1__exon4",
-            "AT1G67500__1__exon5",
-            "AT1G67500__1__exon6",
-            "AT1G67500__1__exon7",
-            "AT1G67500__1__exon8",
-            "AT1G67500__1__exon9",
-            "AT1G67500__2__exon10",
-            "AT1G67500__1__exon12",
-            "AT1G67500__1__exon13",
-            "AT1G67500__1__exon14",
-            "AT1G67500__1__exon15",
-            "AT1G67500__1__exon16",
-            "AT1G67500__1__exon17",
-            "AT1G67500__1__exon18",
-            "AT1G67500__1__exon19",
-            "AT1G67500__1__exon20",
-            "AT1G67500__1__exon21",
-            "AT1G67500__1__exon22",
-            "AT1G67500__1__exon23"
+            "AT1G67500.1.exon1",
+            "AT1G67500.1.exon2",
+            "AT1G67500.1.exon3",
+            "AT1G67500.1.exon4",
+            "AT1G67500.1.exon5",
+            "AT1G67500.1.exon6",
+            "AT1G67500.1.exon7",
+            "AT1G67500.1.exon8",
+            "AT1G67500.1.exon9",
+            "AT1G67500.2.exon10",
+            "AT1G67500.1.exon12",
+            "AT1G67500.1.exon13",
+            "AT1G67500.1.exon14",
+            "AT1G67500.1.exon15",
+            "AT1G67500.1.exon16",
+            "AT1G67500.1.exon17",
+            "AT1G67500.1.exon18",
+            "AT1G67500.1.exon19",
+            "AT1G67500.1.exon20",
+            "AT1G67500.1.exon21",
+            "AT1G67500.1.exon22",
+            "AT1G67500.1.exon23"
           ],
           "length": 5883,
           "exon_junctions": [
@@ -549,7 +313,7 @@
           },
           "translation": {
             "id": "AT1G67500.2",
-            "length": 1917,
+            "length": 1916,
             "features": {
               "domain": {
                 "entries": [
@@ -582,16 +346,16 @@
                     "description": "Ribonuclease H-like domain",
                     "db": "Gene3D",
                     "interpro": "IPR012337",
-                    "start": 1214,
-                    "end": 1328
+                    "start": 1058,
+                    "end": 1180
                   },
                   {
                     "name": "3.30.420.10",
                     "description": "Ribonuclease H-like domain",
                     "db": "Gene3D",
                     "interpro": "IPR012337",
-                    "start": 1058,
-                    "end": 1180
+                    "start": 1214,
+                    "end": 1328
                   },
                   {
                     "name": "SSF53098",
@@ -622,16 +386,16 @@
                     "description": "DNA polymerase, palm domain",
                     "db": "Gene3D",
                     "interpro": "IPR023211",
-                    "start": 1513,
-                    "end": 1635
+                    "start": 1369,
+                    "end": 1397
                   },
                   {
                     "name": "2py5A02",
                     "description": "DNA polymerase, palm domain",
                     "db": "Gene3D",
                     "interpro": "IPR023211",
-                    "start": 1369,
-                    "end": 1397
+                    "start": 1513,
+                    "end": 1635
                   },
                   {
                     "name": "PF14260",
@@ -701,16 +465,16 @@
                     "description": "DNA-directed DNA polymerase, family B",
                     "db": "PRINTS",
                     "interpro": "IPR006172",
-                    "start": 1489,
-                    "end": 1501
+                    "start": 1545,
+                    "end": 1553
                   },
                   {
                     "name": "PR00106",
                     "description": "DNA-directed DNA polymerase, family B",
                     "db": "PRINTS",
                     "interpro": "IPR006172",
-                    "start": 1545,
-                    "end": 1553
+                    "start": 1489,
+                    "end": 1501
                   },
                   {
                     "name": "SM00486",
@@ -719,6 +483,14 @@
                     "interpro": "IPR006172",
                     "start": 1057,
                     "end": 1559
+                  },
+                  {
+                    "name": "PTHR10322:SF5",
+                    "description": "DNA polymerase zeta catalytic subunit",
+                    "db": "PANTHER",
+                    "interpro": "IPR030559",
+                    "start": 1216,
+                    "end": 1916
                   },
                   {
                     "name": "PTHR10322:SF5",
@@ -741,24 +513,16 @@
                     "description": "DNA polymerase zeta catalytic subunit",
                     "db": "PANTHER",
                     "interpro": "IPR030559",
-                    "start": 1216,
-                    "end": 1916
-                  },
-                  {
-                    "name": "PTHR10322:SF5",
-                    "description": "DNA polymerase zeta catalytic subunit",
-                    "db": "PANTHER",
-                    "interpro": "IPR030559",
-                    "start": 496,
-                    "end": 538
-                  },
-                  {
-                    "name": "PTHR10322:SF5",
-                    "description": "DNA polymerase zeta catalytic subunit",
-                    "db": "PANTHER",
-                    "interpro": "IPR030559",
                     "start": 1,
                     "end": 202
+                  },
+                  {
+                    "name": "PTHR10322:SF5",
+                    "description": "DNA polymerase zeta catalytic subunit",
+                    "db": "PANTHER",
+                    "interpro": "IPR030559",
+                    "start": 276,
+                    "end": 294
                   },
                   {
                     "name": "PTHR10322:SF5",
@@ -773,8 +537,8 @@
                     "description": "DNA polymerase zeta catalytic subunit",
                     "db": "PANTHER",
                     "interpro": "IPR030559",
-                    "start": 276,
-                    "end": 294
+                    "start": 496,
+                    "end": 538
                   }
                 ]
               },
@@ -791,10 +555,305 @@
                 ]
               }
             }
-          }
+          },
+          "id": "AT1G67500.2"
+        },
+        {
+          "exons": [
+            "AT1G67500.1.exon1",
+            "AT1G67500.1.exon2",
+            "AT1G67500.1.exon3",
+            "AT1G67500.1.exon4",
+            "AT1G67500.1.exon5",
+            "AT1G67500.1.exon6",
+            "AT1G67500.1.exon7",
+            "AT1G67500.1.exon8",
+            "AT1G67500.1.exon9",
+            "AT1G67500.1.exon10",
+            "AT1G67500.1.exon11",
+            "AT1G67500.1.exon12",
+            "AT1G67500.1.exon13",
+            "AT1G67500.1.exon14",
+            "AT1G67500.1.exon15",
+            "AT1G67500.1.exon16",
+            "AT1G67500.1.exon17",
+            "AT1G67500.1.exon18",
+            "AT1G67500.1.exon19",
+            "AT1G67500.1.exon20",
+            "AT1G67500.1.exon21",
+            "AT1G67500.1.exon22",
+            "AT1G67500.1.exon23"
+          ],
+          "length": 5805,
+          "exon_junctions": [
+            68,
+            244,
+            327,
+            385,
+            435,
+            548,
+            594,
+            663,
+            807,
+            991,
+            1083,
+            2704,
+            2896,
+            3249,
+            3392,
+            3975,
+            4122,
+            4395,
+            4503,
+            4709,
+            5013,
+            5631
+          ],
+          "cds": {
+            "start": 133,
+            "end": 5805
+          },
+          "translation": {
+            "id": "AT1G67500.1",
+            "length": 1890,
+            "features": {
+              "domain": {
+                "entries": [
+                  {
+                    "name": "PF03104",
+                    "description": "DNA-directed DNA polymerase, family B, exonuclease domain",
+                    "db": "Pfam",
+                    "interpro": "IPR006133",
+                    "start": 1031,
+                    "end": 1228
+                  },
+                  {
+                    "name": "PF03104",
+                    "description": "DNA-directed DNA polymerase, family B, exonuclease domain",
+                    "db": "Pfam",
+                    "interpro": "IPR006133",
+                    "start": 55,
+                    "end": 212
+                  },
+                  {
+                    "name": "PF00136",
+                    "description": "DNA-directed DNA polymerase, family B, multifunctional domain",
+                    "db": "Pfam",
+                    "interpro": "IPR006134",
+                    "start": 1303,
+                    "end": 1746
+                  },
+                  {
+                    "name": "3.30.420.10",
+                    "description": "Ribonuclease H-like domain",
+                    "db": "Gene3D",
+                    "interpro": "IPR012337",
+                    "start": 1032,
+                    "end": 1154
+                  },
+                  {
+                    "name": "3.30.420.10",
+                    "description": "Ribonuclease H-like domain",
+                    "db": "Gene3D",
+                    "interpro": "IPR012337",
+                    "start": 1188,
+                    "end": 1302
+                  },
+                  {
+                    "name": "SSF53098",
+                    "description": "Ribonuclease H-like domain",
+                    "db": "Superfamily",
+                    "interpro": "IPR012337",
+                    "start": 1031,
+                    "end": 1159
+                  },
+                  {
+                    "name": "SSF53098",
+                    "description": "Ribonuclease H-like domain",
+                    "db": "Superfamily",
+                    "interpro": "IPR012337",
+                    "start": 35,
+                    "end": 187
+                  },
+                  {
+                    "name": "SSF53098",
+                    "description": "Ribonuclease H-like domain",
+                    "db": "Superfamily",
+                    "interpro": "IPR012337",
+                    "start": 1193,
+                    "end": 1302
+                  },
+                  {
+                    "name": "2py5A02",
+                    "description": "DNA polymerase, palm domain",
+                    "db": "Gene3D",
+                    "interpro": "IPR023211",
+                    "start": 1487,
+                    "end": 1609
+                  },
+                  {
+                    "name": "2py5A02",
+                    "description": "DNA polymerase, palm domain",
+                    "db": "Gene3D",
+                    "interpro": "IPR023211",
+                    "start": 1343,
+                    "end": 1371
+                  },
+                  {
+                    "name": "PF14260",
+                    "description": "C4-type zinc-finger of DNA polymerase delta",
+                    "db": "Pfam",
+                    "interpro": "IPR025687",
+                    "start": 1789,
+                    "end": 1862
+                  }
+                ],
+                "architecture": [
+                  {
+                    "root": "12337",
+                    "start": 35,
+                    "end": 212,
+                    "interpro": "IPR012337",
+                    "name": "RNaseH-like_dom",
+                    "description": "Ribonuclease H-like domain"
+                  },
+                  {
+                    "root": "12337",
+                    "start": 1031,
+                    "end": 1302,
+                    "interpro": "IPR012337",
+                    "name": "RNaseH-like_dom",
+                    "description": "Ribonuclease H-like domain"
+                  },
+                  {
+                    "root": "6134",
+                    "start": 1303,
+                    "end": 1746,
+                    "interpro": "IPR006134",
+                    "name": "DNA-dir_DNA_pol_B_multi_dom",
+                    "description": "DNA-directed DNA polymerase, family B, multifunctional domain"
+                  },
+                  {
+                    "root": "23211",
+                    "start": 1343,
+                    "end": 1371,
+                    "interpro": "IPR023211",
+                    "name": "DNA_pol_palm_dom",
+                    "description": "DNA polymerase, palm domain"
+                  },
+                  {
+                    "root": "25687",
+                    "start": 1789,
+                    "end": 1862,
+                    "interpro": "IPR025687",
+                    "name": "Znf-C4pol",
+                    "description": "C4-type zinc-finger of DNA polymerase delta"
+                  }
+                ],
+                "roots": "12337 12337 6134 23211 25687"
+              },
+              "family": {
+                "entries": [
+                  {
+                    "name": "PR00106",
+                    "description": "DNA-directed DNA polymerase, family B",
+                    "db": "PRINTS",
+                    "interpro": "IPR006172",
+                    "start": 1355,
+                    "end": 1368
+                  },
+                  {
+                    "name": "PR00106",
+                    "description": "DNA-directed DNA polymerase, family B",
+                    "db": "PRINTS",
+                    "interpro": "IPR006172",
+                    "start": 1463,
+                    "end": 1475
+                  },
+                  {
+                    "name": "PR00106",
+                    "description": "DNA-directed DNA polymerase, family B",
+                    "db": "PRINTS",
+                    "interpro": "IPR006172",
+                    "start": 1519,
+                    "end": 1527
+                  },
+                  {
+                    "name": "SM00486",
+                    "description": "DNA-directed DNA polymerase, family B",
+                    "db": "Smart",
+                    "interpro": "IPR006172",
+                    "start": 1031,
+                    "end": 1533
+                  },
+                  {
+                    "name": "PTHR10322:SF5",
+                    "description": "DNA polymerase zeta catalytic subunit",
+                    "db": "PANTHER",
+                    "interpro": "IPR030559",
+                    "start": 1031,
+                    "end": 1167
+                  },
+                  {
+                    "name": "PTHR10322:SF5",
+                    "description": "DNA polymerase zeta catalytic subunit",
+                    "db": "PANTHER",
+                    "interpro": "IPR030559",
+                    "start": 1,
+                    "end": 202
+                  },
+                  {
+                    "name": "PTHR10322:SF5",
+                    "description": "DNA polymerase zeta catalytic subunit",
+                    "db": "PANTHER",
+                    "interpro": "IPR030559",
+                    "start": 640,
+                    "end": 779
+                  },
+                  {
+                    "name": "PTHR10322:SF5",
+                    "description": "DNA polymerase zeta catalytic subunit",
+                    "db": "PANTHER",
+                    "interpro": "IPR030559",
+                    "start": 470,
+                    "end": 512
+                  },
+                  {
+                    "name": "PTHR10322:SF5",
+                    "description": "DNA polymerase zeta catalytic subunit",
+                    "db": "PANTHER",
+                    "interpro": "IPR030559",
+                    "start": 1190,
+                    "end": 1890
+                  },
+                  {
+                    "name": "PTHR10322:SF5",
+                    "description": "DNA polymerase zeta catalytic subunit",
+                    "db": "PANTHER",
+                    "interpro": "IPR030559",
+                    "start": 276,
+                    "end": 426
+                  }
+                ]
+              },
+              "conserved_site": {
+                "entries": [
+                  {
+                    "name": "PS00116",
+                    "description": "DNA-directed DNA polymerase, family B, conserved site",
+                    "db": "Prosite_patterns",
+                    "interpro": "IPR017964",
+                    "start": 1521,
+                    "end": 1529
+                  }
+                ]
+              }
+            }
+          },
+          "id": "AT1G67500.1"
         }
-      },
-      "canonical_transcript": "AT1G67500__2"
+      ],
+      "canonical_transcript": "AT1G67500.2"
     },
     "annotations": {
       "domains": {
@@ -859,22 +918,6 @@
             ]
           },
           {
-            "id": "GO:0016035",
-            "name": "zeta DNA polymerase complex",
-            "namespace": "cellular_component",
-            "def": "A heterodimeric DNA polymerase complex that catalyzes error-prone DNA synthesis in contexts such as translesion synthesis and double-stranded break repair. First characterized in Saccharomyces, in which the subunits are Rev3p and Rev7p; a third protein, Rev1p, is often associated with the polymerase dimer.",
-            "subset": null
-          },
-          {
-            "id": "GO:0019985",
-            "name": "translesion synthesis",
-            "namespace": "biological_process",
-            "def": "The replication of damaged DNA by synthesis across a lesion in the template strand; a specialized DNA polymerase or replication complex inserts a defined nucleotide across from the lesion which allows DNA synthesis to continue beyond the lesion. This process can be mutagenic depending on the damaged nucleotide and the inserted nucleotide.",
-            "subset": [
-              "gosubset_prok"
-            ]
-          },
-          {
             "id": "GO:0003677",
             "name": "DNA binding",
             "namespace": "molecular_function",
@@ -901,6 +944,22 @@
               "goslim_plant",
               "gosubset_prok"
             ]
+          },
+          {
+            "id": "GO:0019985",
+            "name": "translesion synthesis",
+            "namespace": "biological_process",
+            "def": "The replication of damaged DNA by synthesis across a lesion in the template strand; a specialized DNA polymerase or replication complex inserts a defined nucleotide across from the lesion which allows DNA synthesis to continue beyond the lesion. This process can be mutagenic depending on the damaged nucleotide and the inserted nucleotide.",
+            "subset": [
+              "gosubset_prok"
+            ]
+          },
+          {
+            "id": "GO:0016035",
+            "name": "zeta DNA polymerase complex",
+            "namespace": "cellular_component",
+            "def": "A heterodimeric DNA polymerase complex that catalyzes error-prone DNA synthesis in contexts such as translesion synthesis and double-stranded break repair. First characterized in Saccharomyces, in which the subunits are Rev3p and Rev7p; a third protein, Rev1p, is often associated with the polymerase dimer.",
+            "subset": null
           },
           {
             "id": "GO:0008408",
@@ -1319,6 +1378,7 @@
         ]
       }
     },
+    "summary": "Encodes the catalytic subunit of DNA polymerase zeta.Mutants are sensitive to UV-B radiation. Gene is involved in damage-tolerance mechanisms through translesion synthesis(TLS).",
     "homology": {
       "gene_tree": {
         "id": "EPlGT00140000001001",
@@ -1330,53 +1390,55 @@
         "root_taxon_id": 131567,
         "root_taxon_name": "cellular organisms"
       },
-      "ortholog_one2one": [
-        "scaffold_201563.1",
-        "Bra004084",
-        "Bo6g098910",
-        "TCM_026537",
-        "VIT_14s0128g00840",
-        "GLYMA03G39720",
-        "PRUPE_ppa000111mg",
-        "POPTR_0013s02320",
-        "MTR_7g113380",
-        "Solyc01g099220.2",
-        "BRADI1G18510",
-        "ORGLA07G0200600",
-        "ORUFI07G26670",
-        "OPUNC07G24130",
-        "BGIOSGA026354",
-        "F775_20297",
-        "Traes_2DS_FA1AA7948",
-        "Traes_2AS_9AE4073B0",
-        "LPERR07G22540",
-        "Si028654m.g",
-        "ONIVA07G25340",
-        "KN538766.1_FG015",
-        "TRIUR3_24522",
-        "Sb02g042330",
-        "MLOC_55106",
-        "Traes_2BS_768F60DAB",
-        "GRMZM2G081639",
-        "OB07G31080",
-        "OBART07G25730",
-        "OGLUM07G25730",
-        "OMERI07G22380",
-        "AMTR_s00057p00185570",
-        "PP1S265_31V6",
-        "CHLREDRAFT_117843",
-        "CMR103C"
-      ],
-      "ortholog_one2many": [
-        "GSMUA_Achr11G20400_001",
-        "GSMUA_Achr11G20390_001",
-        "SELMODRAFT_413713",
-        "SELMODRAFT_443228"
-      ],
-      "within_species_paralog": [
-        "AT5G63960",
-        "AT5G67100"
-      ]
+      "homologous_genes": {
+        "ortholog_one2one": [
+          "scaffold_201563.1",
+          "Bra004084",
+          "Bo6g098910",
+          "TCM_026537",
+          "VIT_14s0128g00840",
+          "GLYMA03G39720",
+          "PRUPE_ppa000111mg",
+          "POPTR_0013s02320",
+          "MTR_7g113380",
+          "Solyc01g099220.2",
+          "BRADI1G18510",
+          "ORGLA07G0200600",
+          "ORUFI07G26670",
+          "OPUNC07G24130",
+          "BGIOSGA026354",
+          "F775_20297",
+          "Traes_2DS_FA1AA7948",
+          "Traes_2AS_9AE4073B0",
+          "LPERR07G22540",
+          "Si028654m.g",
+          "ONIVA07G25340",
+          "KN538766.1_FG015",
+          "TRIUR3_24522",
+          "Sb02g042330",
+          "MLOC_55106",
+          "Traes_2BS_768F60DAB",
+          "GRMZM2G081639",
+          "OB07G31080",
+          "OBART07G25730",
+          "OGLUM07G25730",
+          "OMERI07G22380",
+          "AMTR_s00057p00185570",
+          "PP1S265_31V6",
+          "CHLREDRAFT_117843",
+          "CMR103C"
+        ],
+        "ortholog_one2many": [
+          "GSMUA_Achr11G20400_001",
+          "GSMUA_Achr11G20390_001",
+          "SELMODRAFT_413713",
+          "SELMODRAFT_443228"
+        ],
+        "within_species_paralog": [
+          "AT5G63960",
+          "AT5G67100"
+        ]
+      }
     },
     "bins": {
       "fixed_100": 222,
@@ -1387,16 +1449,18 @@
       "uniform_2Mb": 386,
       "uniform_5Mb": 165,
       "uniform_10Mb": 92
-    }
+    },
+    "species_idx": 1
   },
   {
     "_id": "AT4G25880",
     "name": "APUM6",
-    "description": "Pumilio homolog 6, chloroplastic [Source:UniProtKB/Swiss-Prot;Acc:Q9C5E7]",
+    "description": "pumilio 6",
     "biotype": "protein_coding",
     "taxon_id": 3702,
     "system_name": "arabidopsis_thaliana",
     "db_type": "core",
+    "gene_idx": 24179,
     "location": {
       "region": "4",
       "start": 13154708,
@@ -1404,73 +1468,124 @@
       "strand": 1,
       "map": "GCA_000001735.1"
     },
-    "xrefs": {
-      "Uniprot_gn": [
-        "APUM6"
-      ],
-      "TAIR_SYMBOL": [
-        "APUM6"
-      ],
-      "Uniprot/SWISSPROT": [
-        "Q9C5E7"
-      ],
-      "EMBL": [
-        "AK319148",
-        "AK318840",
-        "AY133866",
-        "AF360298",
-        "AL049480",
-        "AL161564",
-        "CP002687"
-      ],
-      "TAIR_TRANSLATION": [
-        "AT4G25880"
-      ],
-      "UniParc": [
-        "UPI00000A5527"
-      ],
-      "RefSeq_peptide": [
-        "NP_567733"
-      ],
-      "protein_id": [
-        "BAH57263",
-        "BAH56955",
-        "AAM91800",
-        "AAK26008",
-        "AEE85129",
-        "AEE85128",
-        "AEE85127",
-        "CAB79443",
-        "CAB39609"
-      ],
-      "TAIR_LOCUS_MODEL": [
-        "AT4G25880.1"
-      ],
-      "RefSeq_mRNA": [
-        "NM_118721"
-      ],
-      "WikiGene": [
-        "828694"
-      ],
-      "ARAPORT_GENE": [
-        "AT4G25880"
-      ],
-      "NASC_GENE_ID": [
-        "AT4G25880"
-      ],
-      "EntrezGene": [
-        "828694"
-      ],
-      "TAIR_LOCUS": [
-        "AT4G25880"
-      ],
-      "UniGene": [
-        "At.21892"
-      ],
-      "ArrayExpress": [
-        "AT4G25880"
-      ]
-    },
+    "xrefs": [
+      {
+        "db": "Uniprot_gn",
+        "ids": [
+          "APUM6"
+        ]
+      },
+      {
+        "db": "TAIR_SYMBOL",
+        "ids": [
+          "APUM6"
+        ]
+      },
+      {
+        "db": "Uniprot/SWISSPROT",
+        "ids": [
+          "Q9C5E7"
+        ]
+      },
+      {
+        "db": "EMBL",
+        "ids": [
+          "AK319148",
+          "AK318840",
+          "AY133866",
+          "AF360298",
+          "AL049480",
+          "AL161564",
+          "CP002687"
+        ]
+      },
+      {
+        "db": "TAIR_TRANSLATION",
+        "ids": [
+          "AT4G25880"
+        ]
+      },
+      {
+        "db": "UniParc",
+        "ids": [
+          "UPI00000A5527"
+        ]
+      },
+      {
+        "db": "RefSeq_peptide",
+        "ids": [
+          "NP_567733"
+        ]
+      },
+      {
+        "db": "protein_id",
+        "ids": [
+          "BAH57263",
+          "BAH56955",
+          "AAM91800",
+          "AAK26008",
+          "AEE85129",
+          "AEE85128",
+          "AEE85127",
+          "CAB79443",
+          "CAB39609"
+        ]
+      },
+      {
+        "db": "TAIR_LOCUS_MODEL",
+        "ids": [
+          "AT4G25880.1"
+        ]
+      },
+      {
+        "db": "RefSeq_mRNA",
+        "ids": [
+          "NM_118721"
+        ]
+      },
+      {
+        "db": "WikiGene",
+        "ids": [
+          "828694"
+        ]
+      },
+      {
+        "db": "ARAPORT_GENE",
+        "ids": [
+          "AT4G25880"
+        ]
+      },
+      {
+        "db": "NASC_GENE_ID",
+        "ids": [
+          "AT4G25880"
+        ]
+      },
+      {
+        "db": "EntrezGene",
+        "ids": [
+          "828694"
+        ]
+      },
+      {
+        "db": "TAIR_LOCUS",
+        "ids": [
+          "AT4G25880"
+        ]
+      },
+      {
+        "db": "UniGene",
+        "ids": [
+          "At.21892"
+        ]
+      },
+      {
+        "db": "ArrayExpress",
+        "ids": [
+          "AT4G25880"
+        ]
+      }
+    ],
     "synonyms": [
       "C0Z2M6",
       "Q2V3E7",
@@ -1483,641 +1598,96 @@
       "PUM6"
     ],
     "gene_structure": {
-      "exons": {
-        "AT4G25880__2__exon1": {
+      "exons": [
+        {
+          "id": "AT4G25880.2.exon1",
           "start": 182,
           "end": 287
         },
-        "AT4G25880__2__exon2": {
+        {
+          "id": "AT4G25880.2.exon2",
           "start": 777,
           "end": 1305
         },
-        "AT4G25880__2__exon3": {
+        {
+          "id": "AT4G25880.2.exon3",
           "start": 1403,
           "end": 2529
         },
-        "AT4G25880__2__exon4": {
+        {
+          "id": "AT4G25880.2.exon4",
           "start": 2645,
           "end": 2768
         },
-        "AT4G25880__2__exon5": {
+        {
+          "id": "AT4G25880.2.exon5",
           "start": 2856,
           "end": 2963
         },
-        "AT4G25880__2__exon6": {
+        {
+          "id": "AT4G25880.2.exon6",
           "start": 3040,
           "end": 3252
         },
-        "AT4G25880__2__exon7": {
+        {
+          "id": "AT4G25880.2.exon7",
           "start": 3385,
           "end": 3495
         },
-        "AT4G25880__2__exon8": {
+        {
+          "id": "AT4G25880.2.exon8",
           "start": 3588,
           "end": 3782
         },
-        "AT4G25880__2__exon9": {
+        {
+          "id": "AT4G25880.2.exon9",
           "start": 3865,
           "end": 4036
         },
-        "AT4G25880__2__exon10": {
+        {
+          "id": "AT4G25880.2.exon10",
           "start": 4349,
           "end": 4675
         },
-        "AT4G25880__3__exon1": {
+        {
+          "id": "AT4G25880.3.exon1",
           "start": 262,
           "end": 287
         },
-        "AT4G25880__3__exon9": {
+        {
+          "id": "AT4G25880.3.exon9",
           "start": 3865,
           "end": 4053
         },
-        "AT4G25880__3__exon10": {
+        {
+          "id": "AT4G25880.3.exon10",
           "start": 4349,
           "end": 4675
         },
-        "AT4G25880__1__exon1": {
+        {
+          "id": "AT4G25880.1.exon1",
           "start": 1,
           "end": 287
         },
-        "AT4G25880__1__exon4": {
+        {
+          "id": "AT4G25880.1.exon4",
           "start": 2627,
           "end": 2768
         }
-      },
-      "transcripts": {
-        "AT4G25880__2": {
+      ],
+      "transcripts": [
+        {
           "exons": [
-            "AT4G25880__2__exon1",
-            "AT4G25880__2__exon2",
-            "AT4G25880__2__exon3",
-            "AT4G25880__2__exon4",
-            "AT4G25880__2__exon5",
-            "AT4G25880__2__exon6",
-            "AT4G25880__2__exon7",
-            "AT4G25880__2__exon8",
-            "AT4G25880__2__exon9",
-            "AT4G25880__2__exon10"
-          ],
-          "length": 3012,
-          "exon_junctions": [
-            106,
-            635,
-            1762,
-            1886,
-            1994,
-            2207,
-            2318,
-            2513,
-            2685
-          ],
-          "cds": {
-            "start": 141,
-            "end": 2708
-          },
-          "translation": {
-            "id": "AT4G25880.2",
-            "length": 856,
-            "features": {
-              "repeat": {
-                "entries": [
-                  {
-                    "name": "PF00806",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Pfam",
-                    "interpro": "IPR001313",
-                    "start": 672,
-                    "end": 697,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PF00806",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Pfam",
-                    "interpro": "IPR001313",
-                    "start": 743,
-                    "end": 777,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PF00806",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Pfam",
-                    "interpro": "IPR001313",
-                    "start": 562,
-                    "end": 594,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PF00806",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Pfam",
-                    "interpro": "IPR001313",
-                    "start": 601,
-                    "end": 628,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PF00806",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Pfam",
-                    "interpro": "IPR001313",
-                    "start": 643,
-                    "end": 662,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PF00806",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Pfam",
-                    "interpro": "IPR001313",
-                    "start": 707,
-                    "end": 740,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PF00806",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Pfam",
-                    "interpro": "IPR001313",
-                    "start": 788,
-                    "end": 815,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PS50302",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Prosite_profiles",
-                    "interpro": "IPR001313",
-                    "start": 562,
-                    "end": 597,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PS50302",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Prosite_profiles",
-                    "interpro": "IPR001313",
-                    "start": 670,
-                    "end": 706,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PS50302",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Prosite_profiles",
-                    "interpro": "IPR001313",
-                    "start": 785,
-                    "end": 820,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PS50302",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Prosite_profiles",
-                    "interpro": "IPR001313",
-                    "start": 634,
-                    "end": 669,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PS50302",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Prosite_profiles",
-                    "interpro": "IPR001313",
-                    "start": 707,
-                    "end": 742,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PS50302",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Prosite_profiles",
-                    "interpro": "IPR001313",
-                    "start": 743,
-                    "end": 778,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PS50302",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Prosite_profiles",
-                    "interpro": "IPR001313",
-                    "start": 598,
-                    "end": 633,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PS50303",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Prosite_profiles",
-                    "interpro": "IPR001313",
-                    "start": 500,
-                    "end": 846,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "SM00025",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Smart",
-                    "interpro": "IPR001313",
-                    "start": 670,
-                    "end": 706,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "SM00025",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Smart",
-                    "interpro": "IPR001313",
-                    "start": 743,
-                    "end": 778,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "SM00025",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Smart",
-                    "interpro": "IPR001313",
-                    "start": 598,
-                    "end": 633,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "SM00025",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Smart",
-                    "interpro": "IPR001313",
-                    "start": 785,
-                    "end": 820,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "SM00025",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Smart",
-                    "interpro": "IPR001313",
-                    "start": 707,
-                    "end": 742,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "SM00025",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Smart",
-                    "interpro": "IPR001313",
-                    "start": 532,
-                    "end": 561,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "SM00025",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Smart",
-                    "interpro": "IPR001313",
-                    "start": 562,
-                    "end": 597,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "SM00025",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Smart",
-                    "interpro": "IPR001313",
-                    "start": 634,
-                    "end": 669,
-                    "ipr": 1313
-                  }
-                ]
-              },
-              "domain": {
-                "entries": [
-                  {
-                    "name": "1.25.10.10",
-                    "description": "Armadillo-like helical",
-                    "db": "Gene3D",
-                    "interpro": "IPR011989",
-                    "start": 517,
-                    "end": 847,
-                    "ipr": 11989
-                  },
-                  {
-                    "name": "SSF48371",
-                    "description": "Armadillo-type fold",
-                    "db": "Superfamily",
-                    "interpro": "IPR016024",
-                    "start": 515,
-                    "end": 843,
-                    "ipr": 16024
-                  }
-                ],
-                "architecture": [
-                  {
-                    "root": "16024",
-                    "start": 515,
-                    "end": 847,
-                    "interpro": "IPR016024",
-                    "name": "ARM-type_fold",
-                    "description": "Armadillo-type fold"
-                  }
-                ],
-                "roots": "16024"
-              }
-            }
-          }
-        },
-        "AT4G25880__3": {
-          "exons": [
-            "AT4G25880__3__exon1",
-            "AT4G25880__2__exon2",
-            "AT4G25880__2__exon3",
-            "AT4G25880__2__exon4",
-            "AT4G25880__2__exon5",
-            "AT4G25880__2__exon6",
-            "AT4G25880__2__exon7",
-            "AT4G25880__2__exon8",
-            "AT4G25880__3__exon9",
-            "AT4G25880__3__exon10"
-          ],
-          "length": 2949,
-          "exon_junctions": [
-            26,
-            555,
-            1682,
-            1806,
-            1914,
-            2127,
-            2238,
-            2433,
-            2622
-          ],
-          "cds": {
-            "start": 61,
-            "end": 2637
-          },
-          "translation": {
-            "id": "AT4G25880.3",
-            "length": 859,
-            "features": {
-              "repeat": {
-                "entries": [
-                  {
-                    "name": "PF00806",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Pfam",
-                    "interpro": "IPR001313",
-                    "start": 672,
-                    "end": 697,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PF00806",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Pfam",
-                    "interpro": "IPR001313",
-                    "start": 743,
-                    "end": 777,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PF00806",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Pfam",
-                    "interpro": "IPR001313",
-                    "start": 562,
-                    "end": 594,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PF00806",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Pfam",
-                    "interpro": "IPR001313",
-                    "start": 601,
-                    "end": 628,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PF00806",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Pfam",
-                    "interpro": "IPR001313",
-                    "start": 643,
-                    "end": 662,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PF00806",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Pfam",
-                    "interpro": "IPR001313",
-                    "start": 707,
-                    "end": 740,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PF00806",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Pfam",
-                    "interpro": "IPR001313",
-                    "start": 788,
-                    "end": 815,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PS50302",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Prosite_profiles",
-                    "interpro": "IPR001313",
-                    "start": 562,
-                    "end": 597,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PS50302",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Prosite_profiles",
-                    "interpro": "IPR001313",
-                    "start": 670,
-                    "end": 706,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PS50302",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Prosite_profiles",
-                    "interpro": "IPR001313",
-                    "start": 785,
-                    "end": 820,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PS50302",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Prosite_profiles",
-                    "interpro": "IPR001313",
-                    "start": 634,
-                    "end": 669,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PS50302",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Prosite_profiles",
-                    "interpro": "IPR001313",
-                    "start": 707,
-                    "end": 742,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PS50302",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Prosite_profiles",
-                    "interpro": "IPR001313",
-                    "start": 743,
-                    "end": 778,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PS50302",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Prosite_profiles",
-                    "interpro": "IPR001313",
-                    "start": 598,
-                    "end": 633,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "PS50303",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Prosite_profiles",
-                    "interpro": "IPR001313",
-                    "start": 500,
-                    "end": 846,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "SM00025",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Smart",
-                    "interpro": "IPR001313",
-                    "start": 670,
-                    "end": 706,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "SM00025",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Smart",
-                    "interpro": "IPR001313",
-                    "start": 743,
-                    "end": 778,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "SM00025",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Smart",
-                    "interpro": "IPR001313",
-                    "start": 598,
-                    "end": 633,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "SM00025",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Smart",
-                    "interpro": "IPR001313",
-                    "start": 785,
-                    "end": 820,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "SM00025",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Smart",
-                    "interpro": "IPR001313",
-                    "start": 707,
-                    "end": 742,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "SM00025",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Smart",
-                    "interpro": "IPR001313",
-                    "start": 532,
-                    "end": 561,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "SM00025",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Smart",
-                    "interpro": "IPR001313",
-                    "start": 562,
-                    "end": 597,
-                    "ipr": 1313
-                  },
-                  {
-                    "name": "SM00025",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Smart",
-                    "interpro": "IPR001313",
-                    "start": 634,
-                    "end": 669,
-                    "ipr": 1313
-                  }
-                ]
-              },
-              "domain": {
-                "entries": [
-                  {
-                    "name": "1.25.10.10",
-                    "description": "Armadillo-like helical",
-                    "db": "Gene3D",
-                    "interpro": "IPR011989",
-                    "start": 517,
-                    "end": 847,
-                    "ipr": 11989
-                  },
-                  {
-                    "name": "SSF48371",
-                    "description": "Armadillo-type fold",
-                    "db": "Superfamily",
-                    "interpro": "IPR016024",
-                    "start": 515,
-                    "end": 843,
-                    "ipr": 16024
-                  }
-                ],
-                "architecture": [
-                  {
-                    "root": "16024",
-                    "start": 515,
-                    "end": 847,
-                    "interpro": "IPR016024",
-                    "name": "ARM-type_fold",
-                    "description": "Armadillo-type fold"
-                  }
-                ],
-                "roots": "16024"
-              }
-            }
-          }
-        },
-        "AT4G25880__1": {
-          "exons": [
-            "AT4G25880__1__exon1",
-            "AT4G25880__2__exon2",
-            "AT4G25880__2__exon3",
-            "AT4G25880__1__exon4",
-            "AT4G25880__2__exon5",
-            "AT4G25880__2__exon6",
-            "AT4G25880__2__exon7",
-            "AT4G25880__2__exon8",
-            "AT4G25880__2__exon9",
-            "AT4G25880__2__exon10"
+            "AT4G25880.1.exon1",
+            "AT4G25880.2.exon2",
+            "AT4G25880.2.exon3",
+            "AT4G25880.1.exon4",
+            "AT4G25880.2.exon5",
+            "AT4G25880.2.exon6",
+            "AT4G25880.2.exon7",
+            "AT4G25880.2.exon8",
+            "AT4G25880.2.exon9",
+            "AT4G25880.2.exon10"
           ],
           "length": 3211,
           "exon_junctions": [
@@ -2137,7 +1707,7 @@
           },
           "translation": {
             "id": "AT4G25880.1",
-            "length": 862,
+            "length": 861,
             "features": {
               "repeat": {
                 "entries": [
@@ -2146,8 +1716,16 @@
                     "description": "Pumilio RNA-binding repeat",
                     "db": "Pfam",
                     "interpro": "IPR001313",
-                    "start": 649,
-                    "end": 668
+                    "start": 678,
+                    "end": 703
+                  },
+                  {
+                    "name": "PF00806",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Pfam",
+                    "interpro": "IPR001313",
+                    "start": 794,
+                    "end": 821
                   },
                   {
                     "name": "PF00806",
@@ -2156,6 +1734,14 @@
                     "interpro": "IPR001313",
                     "start": 607,
                     "end": 634
+                  },
+                  {
+                    "name": "PF00806",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Pfam",
+                    "interpro": "IPR001313",
+                    "start": 649,
+                    "end": 668
                   },
                   {
                     "name": "PF00806",
@@ -2178,34 +1764,34 @@
                     "description": "Pumilio RNA-binding repeat",
                     "db": "Pfam",
                     "interpro": "IPR001313",
-                    "start": 749,
-                    "end": 783
-                  },
-                  {
-                    "name": "PF00806",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Pfam",
-                    "interpro": "IPR001313",
-                    "start": 794,
-                    "end": 821
-                  },
-                  {
-                    "name": "PF00806",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Pfam",
-                    "interpro": "IPR001313",
-                    "start": 678,
-                    "end": 703
-                  },
-                  {
-                    "name": "PF00806",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Pfam",
-                    "interpro": "IPR001313",
                     "start": 533,
                     "end": 562
                   },
                   {
+                    "name": "PF00806",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Pfam",
+                    "interpro": "IPR001313",
+                    "start": 749,
+                    "end": 783
+                  },
+                  {
+                    "name": "PS50302",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Prosite_profiles",
+                    "interpro": "IPR001313",
+                    "start": 676,
+                    "end": 712
+                  },
+                  {
+                    "name": "PS50302",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Prosite_profiles",
+                    "interpro": "IPR001313",
+                    "start": 568,
+                    "end": 603
+                  },
+                  {
                     "name": "PS50302",
                     "description": "Pumilio RNA-binding repeat",
                     "db": "Prosite_profiles",
@@ -2226,30 +1812,6 @@
                     "description": "Pumilio RNA-binding repeat",
                     "db": "Prosite_profiles",
                     "interpro": "IPR001313",
-                    "start": 676,
-                    "end": 712
-                  },
-                  {
-                    "name": "PS50302",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Prosite_profiles",
-                    "interpro": "IPR001313",
-                    "start": 791,
-                    "end": 826
-                  },
-                  {
-                    "name": "PS50302",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Prosite_profiles",
-                    "interpro": "IPR001313",
-                    "start": 568,
-                    "end": 603
-                  },
-                  {
-                    "name": "PS50302",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Prosite_profiles",
-                    "interpro": "IPR001313",
                     "start": 640,
                     "end": 675
                   },
@@ -2258,8 +1820,8 @@
                     "description": "Pumilio RNA-binding repeat",
                     "db": "Prosite_profiles",
                     "interpro": "IPR001313",
-                    "start": 604,
-                    "end": 639
+                    "start": 791,
+                    "end": 826
                   },
                   {
                     "name": "PS50302",
@@ -2270,20 +1832,12 @@
                     "end": 567
                   },
                   {
-                    "name": "PS50303",
+                    "name": "PS50302",
                     "description": "Pumilio RNA-binding repeat",
                     "db": "Prosite_profiles",
                     "interpro": "IPR001313",
-                    "start": 512,
-                    "end": 852
-                  },
-                  {
-                    "name": "SM00025",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Smart",
-                    "interpro": "IPR001313",
-                    "start": 791,
-                    "end": 826
+                    "start": 604,
+                    "end": 639
                   },
                   {
                     "name": "SM00025",
@@ -2306,16 +1860,32 @@
                     "description": "Pumilio RNA-binding repeat",
                     "db": "Smart",
                     "interpro": "IPR001313",
-                    "start": 640,
-                    "end": 675
+                    "start": 749,
+                    "end": 784
                   },
                   {
                     "name": "SM00025",
                     "description": "Pumilio RNA-binding repeat",
                     "db": "Smart",
                     "interpro": "IPR001313",
-                    "start": 749,
-                    "end": 784
+                    "start": 791,
+                    "end": 826
+                  },
+                  {
+                    "name": "SM00025",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Smart",
+                    "interpro": "IPR001313",
+                    "start": 532,
+                    "end": 567
+                  },
+                  {
+                    "name": "SM00025",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Smart",
+                    "interpro": "IPR001313",
+                    "start": 640,
+                    "end": 675
                   },
                   {
                     "name": "SM00025",
@@ -2332,14 +1902,6 @@
                     "interpro": "IPR001313",
                     "start": 604,
                     "end": 639
-                  },
-                  {
-                    "name": "SM00025",
-                    "description": "Pumilio RNA-binding repeat",
-                    "db": "Smart",
-                    "interpro": "IPR001313",
-                    "start": 532,
-                    "end": 567
                   }
                 ]
               },
@@ -2360,12 +1922,20 @@
                     "interpro": "IPR016024",
                     "start": 515,
                     "end": 849
+                  },
+                  {
+                    "name": "PS50303",
+                    "description": "Pumilio homology domain",
+                    "db": "Prosite_profiles",
+                    "interpro": "IPR033133",
+                    "start": 512,
+                    "end": 852
                   }
                 ],
                 "architecture": [
                   {
                     "root": "16024",
-                    "start": 515,
+                    "start": 512,
                     "end": 853,
                     "interpro": "IPR016024",
                     "name": "ARM-type_fold",
@@ -2375,10 +1945,523 @@
                 "roots": "16024"
               }
             }
-          }
+          },
+          "id": "AT4G25880.1"
+        },
+        {
+          "exons": [
+            "AT4G25880.3.exon1",
+            "AT4G25880.2.exon2",
+            "AT4G25880.2.exon3",
+            "AT4G25880.2.exon4",
+            "AT4G25880.2.exon5",
+            "AT4G25880.2.exon6",
+            "AT4G25880.2.exon7",
+            "AT4G25880.2.exon8",
+            "AT4G25880.3.exon9",
+            "AT4G25880.3.exon10"
+          ],
+          "length": 2949,
+          "exon_junctions": [
+            26,
+            555,
+            1682,
+            1806,
+            1914,
+            2127,
+            2238,
+            2433,
+            2622
+          ],
+          "cds": {
+            "start": 61,
+            "end": 2637
+          },
+          "translation": {
+            "id": "AT4G25880.3",
+            "length": 858,
+            "features": {
+              "repeat": {
+                "entries": [
+                  {
+                    "name": "PF00806",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Pfam",
+                    "interpro": "IPR001313",
+                    "start": 562,
+                    "end": 594
+                  },
+                  {
+                    "name": "PF00806",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Pfam",
+                    "interpro": "IPR001313",
+                    "start": 601,
+                    "end": 628
+                  },
+                  {
+                    "name": "PF00806",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Pfam",
+                    "interpro": "IPR001313",
+                    "start": 643,
+                    "end": 662
+                  },
+                  {
+                    "name": "PF00806",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Pfam",
+                    "interpro": "IPR001313",
+                    "start": 672,
+                    "end": 697
+                  },
+                  {
+                    "name": "PF00806",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Pfam",
+                    "interpro": "IPR001313",
+                    "start": 707,
+                    "end": 740
+                  },
+                  {
+                    "name": "PF00806",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Pfam",
+                    "interpro": "IPR001313",
+                    "start": 743,
+                    "end": 777
+                  },
+                  {
+                    "name": "PF00806",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Pfam",
+                    "interpro": "IPR001313",
+                    "start": 788,
+                    "end": 815
+                  },
+                  {
+                    "name": "PS50302",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Prosite_profiles",
+                    "interpro": "IPR001313",
+                    "start": 707,
+                    "end": 742
+                  },
+                  {
+                    "name": "PS50302",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Prosite_profiles",
+                    "interpro": "IPR001313",
+                    "start": 785,
+                    "end": 820
+                  },
+                  {
+                    "name": "PS50302",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Prosite_profiles",
+                    "interpro": "IPR001313",
+                    "start": 634,
+                    "end": 669
+                  },
+                  {
+                    "name": "PS50302",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Prosite_profiles",
+                    "interpro": "IPR001313",
+                    "start": 670,
+                    "end": 706
+                  },
+                  {
+                    "name": "PS50302",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Prosite_profiles",
+                    "interpro": "IPR001313",
+                    "start": 598,
+                    "end": 633
+                  },
+                  {
+                    "name": "PS50302",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Prosite_profiles",
+                    "interpro": "IPR001313",
+                    "start": 562,
+                    "end": 597
+                  },
+                  {
+                    "name": "PS50302",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Prosite_profiles",
+                    "interpro": "IPR001313",
+                    "start": 743,
+                    "end": 778
+                  },
+                  {
+                    "name": "SM00025",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Smart",
+                    "interpro": "IPR001313",
+                    "start": 707,
+                    "end": 742
+                  },
+                  {
+                    "name": "SM00025",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Smart",
+                    "interpro": "IPR001313",
+                    "start": 670,
+                    "end": 706
+                  },
+                  {
+                    "name": "SM00025",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Smart",
+                    "interpro": "IPR001313",
+                    "start": 634,
+                    "end": 669
+                  },
+                  {
+                    "name": "SM00025",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Smart",
+                    "interpro": "IPR001313",
+                    "start": 562,
+                    "end": 597
+                  },
+                  {
+                    "name": "SM00025",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Smart",
+                    "interpro": "IPR001313",
+                    "start": 532,
+                    "end": 561
+                  },
+                  {
+                    "name": "SM00025",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Smart",
+                    "interpro": "IPR001313",
+                    "start": 785,
+                    "end": 820
+                  },
+                  {
+                    "name": "SM00025",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Smart",
+                    "interpro": "IPR001313",
+                    "start": 598,
+                    "end": 633
+                  },
+                  {
+                    "name": "SM00025",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Smart",
+                    "interpro": "IPR001313",
+                    "start": 743,
+                    "end": 778
+                  }
+                ]
+              },
+              "domain": {
+                "entries": [
+                  {
+                    "name": "1.25.10.10",
+                    "description": "Armadillo-like helical",
+                    "db": "Gene3D",
+                    "interpro": "IPR011989",
+                    "start": 517,
+                    "end": 847
+                  },
+                  {
+                    "name": "SSF48371",
+                    "description": "Armadillo-type fold",
+                    "db": "Superfamily",
+                    "interpro": "IPR016024",
+                    "start": 515,
+                    "end": 843
+                  },
+                  {
+                    "name": "PS50303",
+                    "description": "Pumilio homology domain",
+                    "db": "Prosite_profiles",
+                    "interpro": "IPR033133",
+                    "start": 500,
+                    "end": 846
+                  }
+                ],
+                "architecture": [
+                  {
+                    "root": "16024",
+                    "start": 500,
+                    "end": 847,
+                    "interpro": "IPR016024",
+                    "name": "ARM-type_fold",
+                    "description": "Armadillo-type fold"
+                  }
+                ],
+                "roots": "16024"
+              }
+            }
+          },
+          "id": "AT4G25880.3"
+        },
+        {
+          "exons": [
+            "AT4G25880.2.exon1",
+            "AT4G25880.2.exon2",
+            "AT4G25880.2.exon3",
+            "AT4G25880.2.exon4",
+            "AT4G25880.2.exon5",
+            "AT4G25880.2.exon6",
+            "AT4G25880.2.exon7",
+            "AT4G25880.2.exon8",
+            "AT4G25880.2.exon9",
+            "AT4G25880.2.exon10"
+          ],
+          "length": 3012,
+          "exon_junctions": [
+            106,
+            635,
+            1762,
+            1886,
+            1994,
+            2207,
+            2318,
+            2513,
+            2685
+          ],
+          "cds": {
+            "start": 141,
+            "end": 2708
+          },
+          "translation": {
+            "id": "AT4G25880.2",
+            "length": 855,
+            "features": {
+              "repeat": {
+                "entries": [
+                  {
+                    "name": "PF00806",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Pfam",
+                    "interpro": "IPR001313",
+                    "start": 643,
+                    "end": 662
+                  },
+                  {
+                    "name": "PF00806",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Pfam",
+                    "interpro": "IPR001313",
+                    "start": 672,
+                    "end": 697
+                  },
+                  {
+                    "name": "PF00806",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Pfam",
+                    "interpro": "IPR001313",
+                    "start": 562,
+                    "end": 594
+                  },
+                  {
+                    "name": "PF00806",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Pfam",
+                    "interpro": "IPR001313",
+                    "start": 601,
+                    "end": 628
+                  },
+                  {
+                    "name": "PF00806",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Pfam",
+                    "interpro": "IPR001313",
+                    "start": 788,
+                    "end": 815
+                  },
+                  {
+                    "name": "PF00806",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Pfam",
+                    "interpro": "IPR001313",
+                    "start": 707,
+                    "end": 740
+                  },
+                  {
+                    "name": "PF00806",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Pfam",
+                    "interpro": "IPR001313",
+                    "start": 743,
+                    "end": 777
+                  },
+                  {
+                    "name": "PS50302",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Prosite_profiles",
+                    "interpro": "IPR001313",
+                    "start": 634,
+                    "end": 669
+                  },
+                  {
+                    "name": "PS50302",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Prosite_profiles",
+                    "interpro": "IPR001313",
+                    "start": 707,
+                    "end": 742
+                  },
+                  {
+                    "name": "PS50302",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Prosite_profiles",
+                    "interpro": "IPR001313",
+                    "start": 785,
+                    "end": 820
+                  },
+                  {
+                    "name": "PS50302",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Prosite_profiles",
+                    "interpro": "IPR001313",
+                    "start": 598,
+                    "end": 633
+                  },
+                  {
+                    "name": "PS50302",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Prosite_profiles",
+                    "interpro": "IPR001313",
+                    "start": 670,
+                    "end": 706
+                  },
+                  {
+                    "name": "PS50302",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Prosite_profiles",
+                    "interpro": "IPR001313",
+                    "start": 562,
+                    "end": 597
+                  },
+                  {
+                    "name": "PS50302",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Prosite_profiles",
+                    "interpro": "IPR001313",
+                    "start": 743,
+                    "end": 778
+                  },
+                  {
+                    "name": "SM00025",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Smart",
+                    "interpro": "IPR001313",
+                    "start": 707,
+                    "end": 742
+                  },
+                  {
+                    "name": "SM00025",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Smart",
+                    "interpro": "IPR001313",
+                    "start": 670,
+                    "end": 706
+                  },
+                  {
+                    "name": "SM00025",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Smart",
+                    "interpro": "IPR001313",
+                    "start": 562,
+                    "end": 597
+                  },
+                  {
+                    "name": "SM00025",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Smart",
+                    "interpro": "IPR001313",
+                    "start": 634,
+                    "end": 669
+                  },
+                  {
+                    "name": "SM00025",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Smart",
+                    "interpro": "IPR001313",
+                    "start": 785,
+                    "end": 820
+                  },
+                  {
+                    "name": "SM00025",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Smart",
+                    "interpro": "IPR001313",
+                    "start": 532,
+                    "end": 561
+                  },
+                  {
+                    "name": "SM00025",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Smart",
+                    "interpro": "IPR001313",
+                    "start": 598,
+                    "end": 633
+                  },
+                  {
+                    "name": "SM00025",
+                    "description": "Pumilio RNA-binding repeat",
+                    "db": "Smart",
+                    "interpro": "IPR001313",
+                    "start": 743,
+                    "end": 778
+                  }
+                ]
+              },
+              "domain": {
+                "entries": [
+                  {
+                    "name": "1.25.10.10",
+                    "description": "Armadillo-like helical",
+                    "db": "Gene3D",
+                    "interpro": "IPR011989",
+                    "start": 517,
+                    "end": 847
+                  },
+                  {
+                    "name": "SSF48371",
+                    "description": "Armadillo-type fold",
+                    "db": "Superfamily",
+                    "interpro": "IPR016024",
+                    "start": 515,
+                    "end": 843
+                  },
+                  {
+                    "name": "PS50303",
+                    "description": "Pumilio homology domain",
+                    "db": "Prosite_profiles",
+                    "interpro": "IPR033133",
+                    "start": 500,
+                    "end": 846
+                  }
+                ],
+                "architecture": [
+                  {
+                    "root": "16024",
+                    "start": 500,
+                    "end": 847,
+                    "interpro": "IPR016024",
+                    "name": "ARM-type_fold",
+                    "description": "Armadillo-type fold"
+                  }
+                ],
+                "roots": "16024"
+              }
+            }
+          },
+          "id": "AT4G25880.2"
         }
-      },
-      "canonical_transcript": "AT4G25880__1"
+      ],
+      "canonical_transcript": "AT4G25880.1"
     },
     "annotations": {
       "domains": {
@@ -2389,12 +2472,13 @@
             "description": "Pumilio RNA-binding repeat"
           },
           {
-            "id": "IPR011989",
-            "name": "ARM-like",
-            "description": "Armadillo-like helical"
+            "id": "IPR033133",
+            "name": "PUM-HD",
+            "description": "Pumilio homology domain"
           }
         ],
         "ancestors": [
+          11989,
           16024
         ]
       },
@@ -2893,6 +2977,7 @@
         ]
       }
     },
+    "summary": "Encodes a member of the Arabidopsis Pumilio (APUM) proteins containing PUF domain (eight repeats of approximately 36 amino acids each). PUF proteins regulate both mRNA stability and translation through sequence-specific binding to the 3' UTR of target mRNA transcripts.",
     "homology": {
       "gene_tree": {
         "id": "EPlGT00820000103459",
@@ -2904,94 +2989,96 @@
         "root_taxon_id": 2759,
         "root_taxon_name": "Eukaryota"
       },
-      "ortholog_one2one": [
-        "scaffold_701722.1",
-        "TCM_039334",
-        "MTR_2g036900",
-        "PRUPE_ppa000898mg",
-        "VIT_05s0062g00010"
-      ],
-      "ortholog_one2many": [
-        "Bra013928",
-        "Bra019137",
-        "Bo1g040620",
-        "Bo7g110580",
-        "POPTR_0006s17870",
-        "GLYMA13G00670",
-        "GLYMA17G06830",
-        "GLYMA15G17680",
-        "POPTR_0022s00840",
-        "GLYMA10G28211",
-        "POPTR_0006s17860",
-        "GLYMA09G06460",
-        "OPUNC09G13590",
-        "OGLUM09G15770",
-        "OBART09G15160",
-        "ONIVA09G15750",
-        "Si013124m.g",
-        "KN539723.1_FG005",
-        "BGIOSGA029511",
-        "OB09G21660",
-        "Sb07g026995",
-        "ORGLA09G0116900",
-        "ORUFI09G16380",
-        "LPERR09G11250",
-        "AMTR_s00025p00181800",
-        "CMR410C",
-        "CHLREDRAFT_123505"
-      ],
-      "within_species_paralog": [
-        "AT3G20250",
-        "AT2G29140",
-        "AT2G29190",
-        "AT3G10360",
-        "AT2G29200",
-        "AT1G35730",
-        "AT5G43110",
-        "AT1G35750",
-        "AT5G43090",
-        "AT4G08840",
-        "AT5G56510",
-        "AT4G08560",
-        "AT1G22240",
-        "AT1G78160"
-      ],
-      "ortholog_many2many": [
-        "MLOC_37686",
-        "BRADI3G40520",
-        "MLOC_12181",
-        "Traes_7DS_EDE1653DD",
-        "F775_07645",
-        "GRMZM2G449123",
-        "Traes_5AL_A671FFD7E",
-        "GRMZM2G035118",
-        "OMERI02G01920",
-        "OMERI07G04370",
-        "GSMUA_Achr1G23630_001",
-        "TRIUR3_25999",
-        "OS08G0519800",
-        "Traes_7BS_FD25753C1",
-        "Traes_5BL_28A843E27",
-        "Traes_5DL_C3D5A5807",
-        "Traes_7AS_A36F1C962",
-        "GSMUA_Achr4G20690_001",
-        "TRIUR3_25564",
-        "BRADI4G34110",
-        "GSMUA_AchrUn_randomG04460_001",
-        "F775_03128",
-        "Traes_7AS_0736D3670",
-        "OS09G0497100",
-        "SELMODRAFT_78497",
-        "PP1S35_216V6",
-        "SELMODRAFT_1983",
-        "PP1S35_161V6",
-        "SELMODRAFT_107963",
-        "PP1S96_93V6",
-        "PP1S96_110V6",
-        "SELMODRAFT_86145",
-        "PP1S15_165V6",
-        "PP1S96_109V6"
-      ]
+      "homologous_genes": {
+        "ortholog_one2one": [
+          "scaffold_701722.1",
+          "TCM_039334",
+          "MTR_2g036900",
+          "PRUPE_ppa000898mg",
+          "VIT_05s0062g00010"
+        ],
+        "ortholog_one2many": [
+          "Bra013928",
+          "Bra019137",
+          "Bo1g040620",
+          "Bo7g110580",
+          "POPTR_0006s17870",
+          "GLYMA13G00670",
+          "GLYMA17G06830",
+          "GLYMA15G17680",
+          "POPTR_0022s00840",
+          "GLYMA10G28211",
+          "POPTR_0006s17860",
+          "GLYMA09G06460",
+          "OPUNC09G13590",
+          "OGLUM09G15770",
+          "OBART09G15160",
+          "ONIVA09G15750",
+          "Si013124m.g",
+          "KN539723.1_FG005",
+          "BGIOSGA029511",
+          "OB09G21660",
+          "Sb07g026995",
+          "ORGLA09G0116900",
+          "ORUFI09G16380",
+          "LPERR09G11250",
+          "AMTR_s00025p00181800",
+          "CMR410C",
+          "CHLREDRAFT_123505"
+        ],
+        "within_species_paralog": [
+          "AT3G20250",
+          "AT2G29140",
+          "AT2G29190",
+          "AT3G10360",
+          "AT2G29200",
+          "AT1G35730",
+          "AT5G43110",
+          "AT1G35750",
+          "AT5G43090",
+          "AT4G08840",
+          "AT5G56510",
+          "AT4G08560",
+          "AT1G22240",
+          "AT1G78160"
+        ],
+        "ortholog_many2many": [
+          "MLOC_37686",
+          "BRADI3G40520",
+          "MLOC_12181",
+          "Traes_7DS_EDE1653DD",
+          "F775_07645",
+          "GRMZM2G449123",
+          "Traes_5AL_A671FFD7E",
+          "GRMZM2G035118",
+          "OMERI02G01920",
+          "OMERI07G04370",
+          "GSMUA_Achr1G23630_001",
+          "TRIUR3_25999",
+          "OS08G0519800",
+          "Traes_7BS_FD25753C1",
+          "Traes_5BL_28A843E27",
+          "Traes_5DL_C3D5A5807",
+          "Traes_7AS_A36F1C962",
+          "GSMUA_Achr4G20690_001",
+          "TRIUR3_25564",
+          "BRADI4G34110",
+          "GSMUA_AchrUn_randomG04460_001",
+          "F775_03128",
+          "Traes_7AS_0736D3670",
+          "OS09G0497100",
+          "SELMODRAFT_78497",
+          "PP1S35_216V6",
+          "SELMODRAFT_1983",
+          "PP1S35_161V6",
+          "SELMODRAFT_107963",
+          "PP1S96_93V6",
+          "PP1S96_110V6",
+          "SELMODRAFT_86145",
+          "PP1S15_165V6",
+          "PP1S96_109V6"
+        ]
+      }
     },
     "bins": {
       "fixed_100": 272,
@@ -3002,6 +3089,7 @@
       "uniform_2Mb": 418,
       "uniform_5Mb": 178,
       "uniform_10Mb": 100
-    }
+    },
+    "species_idx": 1
   }
 ]

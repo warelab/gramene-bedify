@@ -16,7 +16,7 @@ function makeKeys(gene) {
 function bedGene(gene) {
   return [
     gene.location.region,
-    gene.location.start,
+    gene.location.start-1,
     gene.location.end,
     gene._id,
     0,
@@ -85,6 +85,7 @@ function bedTranscript(gene,transcript_id) {
   }
   bed[10] = blockSizes.join(',');
   bed[11] = blockStarts.join(',');
+  bed[1]--;
   return bed;
 }
 
@@ -97,7 +98,7 @@ function bedIntrons(gene, transcript_id) {
       var intron_id = tr.exons[i-1] + '-intron-' + tr.exons[i];
       beds.push([
         gene.location.region,
-        ggp.remap(gene, gene._exons[tr.exons[i-1]].end, 'gene', 'genome'),
+        ggp.remap(gene, gene._exons[tr.exons[i-1]].end, 'gene', 'genome')-1,
         ggp.remap(gene, gene._exons[tr.exons[i]].start, 'gene', 'genome'),
         intron_id.replace(/__/g,'.'),
         0,
@@ -110,7 +111,7 @@ function bedIntrons(gene, transcript_id) {
       var intron_id = tr.exons[i-1] + '-intron-' + tr.exons[i];
       beds.push([
         gene.location.region,
-        ggp.remap(gene, gene._exons[tr.exons[i]].start, 'gene', 'genome'),
+        ggp.remap(gene, gene._exons[tr.exons[i]].start, 'gene', 'genome')-1,
         ggp.remap(gene, gene._exons[tr.exons[i-1]].end, 'gene', 'genome'),
         intron_id.replace(/__/g,'.'),
         0,
@@ -135,8 +136,8 @@ function bedCDS(gene, transcript_id) {
           beds.push([
             gene.location.region,
             (exon.start < cds_start) ?
-              ggp.remap(gene, cds_start, 'gene', 'genome')
-            : ggp.remap(gene, exon.start, 'gene', 'genome'),
+              ggp.remap(gene, cds_start, 'gene', 'genome')-1
+            : ggp.remap(gene, exon.start, 'gene', 'genome')-1,
             (exon.end > cds_end) ?
               ggp.remap(gene, cds_end, 'gene', 'genome')
             : ggp.remap(gene, exon.end, 'gene', 'genome'),
@@ -149,8 +150,8 @@ function bedCDS(gene, transcript_id) {
           beds.push([
             gene.location.region,
             (exon.end > cds_end) ?
-              ggp.remap(gene, cds_end, 'gene', 'genome')
-            : ggp.remap(gene, exon.end, 'gene', 'genome'),
+              ggp.remap(gene, cds_end, 'gene', 'genome')-1
+            : ggp.remap(gene, exon.end, 'gene', 'genome')-1,
             (exon.start < cds_start) ?
               ggp.remap(gene, cds_start, 'gene', 'genome')
             : ggp.remap(gene, exon.start, 'gene', 'genome'),
@@ -177,7 +178,7 @@ function bedUTR5(gene, transcript_id) {
         if (gene.location.strand === 1) {
           beds.push([
             gene.location.region,
-            ggp.remap(gene, exon.start, 'gene', 'genome'),
+            ggp.remap(gene, exon.start, 'gene', 'genome')-1,
             (exon.end < cds_gene_start) ?
               ggp.remap(gene, exon.end, 'gene', 'genome')
             : ggp.remap(gene, cds_gene_start-1, 'gene', 'genome'),
@@ -190,8 +191,8 @@ function bedUTR5(gene, transcript_id) {
           beds.push([
             gene.location.region,
             (exon.end < cds_gene_start) ?
-              ggp.remap(gene, exon.end, 'gene', 'genome')
-            : ggp.remap(gene, cds_gene_start-1, 'gene', 'genome'),
+              ggp.remap(gene, exon.end, 'gene', 'genome')-1
+            : ggp.remap(gene, cds_gene_start-1, 'gene', 'genome')-1,
             ggp.remap(gene, exon.start, 'gene', 'genome'),
             exon_id.replace(/__/g, '.'),
             0,
@@ -217,8 +218,8 @@ function bedUTR3(gene, transcript_id) {
           beds.push([
             gene.location.region,
             (exon.start > cds_gene_end) ?
-              ggp.remap(gene, exon.start, 'gene', 'genome')
-            : ggp.remap(gene, cds_gene_end+1, 'gene', 'genome'),
+              ggp.remap(gene, exon.start, 'gene', 'genome')-1
+            : ggp.remap(gene, cds_gene_end+1, 'gene', 'genome')-1,
             ggp.remap(gene, exon.end, 'gene', 'genome'),
             exon_id.replace(/__/g, '.'),
             0,
@@ -228,7 +229,7 @@ function bedUTR3(gene, transcript_id) {
         else {
           beds.push([
             gene.location.region,
-            ggp.remap(gene, exon.end, 'gene', 'genome'),
+            ggp.remap(gene, exon.end, 'gene', 'genome')-1,
             (exon.start > cds_gene_end) ?
               ggp.remap(gene, exon.start, 'gene', 'genome')
             : ggp.remap(gene, cds_gene_end+1, 'gene', 'genome'),
