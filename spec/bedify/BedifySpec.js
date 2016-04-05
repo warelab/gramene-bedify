@@ -14,4 +14,9 @@ describe('Bedify', function () {
     var bedPlus = bedify(genePlus, {bedFeature:'transcript',bedCombiner:'canonical'});
   });
   
+  it('should produce 0-based start coords', function () {
+    var bedPlus = bedify(genePlus, {bedFeature:'gene'});
+    expect(+bedPlus.split("\t")[1]).toEqual(13154707);
+  });
+  
 });
