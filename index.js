@@ -55,12 +55,10 @@ function bedTranscript(gene,transcript_id) {
       bed[7] = bed[2];
     }
     // iterate over exons in order
-    var tlen=0;
     tr.exons.forEach(function (ex_id) {
       var exon = gene._exons[ex_id];
-      blockStarts.push(tlen);
+      blockStarts.push(exon.start-1);
       blockSizes.push(exon.end-exon.start+1);
-      tlen += exon.end - exon.start + 1;
     });
   }
   else {
@@ -75,12 +73,10 @@ function bedTranscript(gene,transcript_id) {
       bed[7] = bed[2];
     }
     // iterate over exons in reverse order
-    var tlen=0;
     tr.exons.slice().reverse().forEach(function(ex_id) {
       var exon = gene._exons[ex_id];
-      blockStarts.push(tlen);
+      blockStarts.push(ggp.remap(gene, exon.end, 'gene', 'genome', transcript_id) - bed[1]);
       blockSizes.push(exon.end-exon.start+1);
-      tlen += exon.end - exon.start + 1;
     });
   }
   bed[10] = blockSizes.join(',');
