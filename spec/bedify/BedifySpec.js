@@ -19,4 +19,10 @@ describe('Bedify', function () {
     expect(+bedPlus.split("\t")[1]).toEqual(13154707);
   });
   
+  it('should calculate blockStarts correctly', function() {
+    var bedPlus = bedify(genePlus, {bedFeature:'transcript'});
+    expect(+bedPlus.split("\t")[11].split(',')[1]).toEqual(776);
+    var bedMinus = bedify(geneMinus, {bedFeature:'transcript'});
+    expect(+bedMinus.split("\t")[11].split(',')[1]).toEqual(568);
+  });
 });
